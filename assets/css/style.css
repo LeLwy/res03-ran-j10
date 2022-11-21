@@ -1,0 +1,135 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/****************POLICE ET COULEURS****************/
+
+/**POLICE**/
+
+/*  
+font-family: 'Work Sans', sans-serif;
+    font-family: 'Oswald', sans-serif
+/*
+
+/**COULEURS**/
+
+:root{
+
+    --bleu : #3a61ef;  
+    --bleu-foncé : #253879;  
+    --bleu-clair : #dfe4f7;  
+    --blanc-cassé : #eafbf0;  
+    --blanc : #ffffff;  
+    --rouge : #d9022f;  
+   --vert : #1e7062;  
+    --noir : #0d0f0f;
+}
+
+/****************BODY****************/
+
+body{
+    font-family: 'Work Sans', sans-serif;
+}
+
+/****************HEADER****************/
+
+body > header{
+    text-align: center;
+    background-color: var(--blanc);
+    padding:3vh;
+}
+
+body > header > h1{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 2.5em;
+    color: var(--bleu-foncé);
+}
+/****************MAIN****************/
+
+body > main{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+/****************SECTION****************/
+
+body > main > section{
+    display: grid;
+    grid-template-rows: 1fr 6fr;
+}
+
+body > main > section > header{
+    grid-row: 1/2;
+    text-align: center;
+    background-color: var(--bleu);
+    padding: 4vh;
+}
+
+body > main > section > header > h2{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 2em;
+    color: var(--blanc);
+}
+
+/****************FORMULAIRES****************/
+
+body > main > section > form{
+    grid-row: 2/3;
+    padding: 1vh 1vw;
+}
+
+body > main > section > form > .subBtn{
+    padding: 1vh 2vw;
+    max-width: fit-content;
+    background-color: var(--bleu);
+    color: var(--blanc);
+}
+
+/*******FORMULAIRE-1 #connectinfos*******/
+
+body > main > section > #connectInfos > input:not(last-of-type){
+    margin: 1vh;
+    width: 100%;
+}
+
+/*******FORMULAIRE-2 #profilPro*******/
+
+body > main > section > #profilPRo{
+    display: grid;
+    grid-template-rows: 1fr 3fr 1fr 3fr 2fr;
+}
+
+body > main > section > #profilPRo > h3{
+    font-weight: bold;
+}
+
+body > main > section > #profilPRo > h3:first-of-type(){
+    grid-row: 1/2;
+}
+
+body > main > section > #profilPRo > h3:nth-last-of-type(){
+    grid-row: 3/4;
+}
+
+body > main > section > #profilPRo > div:first-of-type(){
+    grid-row: 2/3;
+}
+
+body > main > section > #profilPRo > div:nth-last-of-type(){
+    grid-row: 4/5;
+}
+
+body > main > section > #profilPRo > .subBtn{
+    grid-row: 5/6;
+}
+
+/*******FORMULAIRE-3 #intCenter*******/
+/****************FOOTER****************/
+/****************POLICE ET COUMLEURS****************/
+/****************POLICE ET COUMLEURS****************/
+/****************POLICE ET COUMLEURS****************/
+/****************POLICE ET COUMLEURS****************/
